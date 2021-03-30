@@ -1,0 +1,98 @@
+.awesome {
+  padding: 100px 143px 109px 143px;
+}
+
+.title  {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #212121;
+}
+
+
+h2::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 25px;
+  background-color: #D98943;
+}
+
+/**************************
+ the same but with the help of div */
+/* .awesome__line {
+  width: 64px;
+  height: 2px;
+  background-color: #D98943;
+  margin: 0 auto;
+  margin-top: 25px;
+} ***************************/
+
+.awesome__descr {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #86878B;
+  margin-top: 30px;
+}
+
+.awesome__items{
+  margin-top: 67px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.awesome__item{
+  width: 350px;
+  margin-right: 32px;
+}
+.awesome__item{
+  width: 350px;
+  margin-right: 32px;
+}
+.awesome__item:last-child {
+  margin-right: 0;
+}
+
+.awesome__item_img_round{
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #D98943;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.awesome__item_title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #333333;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.awesome__item_text{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+  margin-top: 16px;
+}
+
