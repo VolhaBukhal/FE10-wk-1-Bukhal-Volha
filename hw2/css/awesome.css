@@ -1,5 +1,5 @@
 .awesome {
-  padding: 100px 143px 109px 143px;
+  padding: 100px 0 109px 0;
 }
 
 .title  {
@@ -44,26 +44,25 @@ h2::after {
   margin-top: 30px;
 }
 
-.awesome__items{
-  margin-top: 67px;
+.awesome__row{
+  margin: 67px -15px 0 -15px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   
 }
 
-.awesome__item{
+.awesome-item{
   width: 350px;
-  margin-right: 32px;
-}
-.awesome__item{
-  width: 350px;
-  margin-right: 32px;
-}
-.awesome__item:last-child {
-  margin-right: 0;
 }
 
-.awesome__item_img_round{
+/* alternative way to center img in div */
+/* .awesome__item_img {
+  display: block;
+  margin: 20px auto;
+} */
+
+.awesome-item__img_round{
   margin: 0 auto;
   width: 70px;
   height: 70px;
@@ -74,7 +73,7 @@ h2::after {
   align-items: center;
 }
 
-.awesome__item_title {
+.awesome-item__title {
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
@@ -85,7 +84,7 @@ h2::after {
   margin-top: 30px;
 }
 
-.awesome__item_text{
+.awesome-item__text{
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
