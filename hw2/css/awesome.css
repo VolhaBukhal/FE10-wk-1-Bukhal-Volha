@@ -10,18 +10,21 @@
   font-size: 36px;
   line-height: 42px;
   text-align: center;
+  text-transform: uppercase;
   color: #212121;
 }
 
 
-h2::after {
+.title::after {
   content: '';
   display: block;
   width: 64px;
   height: 2px;
   margin: 0 auto;
-  margin-top: 25px;
   background-color: #D98943;
+}
+.awesome__title::after {
+  margin-top: 25px;
 }
 
 /**************************
@@ -34,7 +37,7 @@ h2::after {
   margin-top: 25px;
 } ***************************/
 
-.awesome__descr {
+.descr {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;

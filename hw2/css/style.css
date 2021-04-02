@@ -1,8 +1,10 @@
 @import url("../css/awesome.css");
+@import url("../css/price.css");
 
 *{
   padding: 0;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
   /* box-sizing: border-box; */
 }
 
