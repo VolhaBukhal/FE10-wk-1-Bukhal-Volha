@@ -61,6 +61,7 @@ li {
 
 .price-item__text {
   color: #999999;
+  line-height: 50px;
   margin-top: 2px;
 }
 .price-item__text:hover {
