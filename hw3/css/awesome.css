@@ -1,0 +1,101 @@
+.awesome {
+  padding: 100px 0 109px 0;
+  width: 100%
+}
+
+.title  {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+
+.title::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #D98943;
+}
+.awesome__title::after {
+  margin-top: 25px;
+}
+
+/**************************
+ the same but with the help of div */
+/* .awesome__line {
+  width: 64px;
+  height: 2px;
+  background-color: #D98943;
+  margin: 0 auto;
+  margin-top: 25px;
+} ***************************/
+
+.descr {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #86878B;
+  margin-top: 30px;
+}
+
+.awesome__row{
+  margin: 67px -15px 0 -15px;
+  display: flex;
+  flex-basis: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.awesome-item{
+  width: 350px;
+  margin: 0 15px;
+}
+
+/* alternative way to center img in div */
+/* .awesome-item__img {
+  display: block;
+  margin: 20px auto;
+} */
+
+.awesome-item__img_round{
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #D98943;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.awesome-item__title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #333333;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.awesome-item__text{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 16px;
+}
+
