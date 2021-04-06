@@ -9,10 +9,14 @@
     margin-top: 34px;
 }
 .customers__row {
+    margin: 0 -15px;
     margin-top: 67px;
+    display: flex;
+    justify-content: space-between;
 }
 .customers-item {
     width: 298px;
+    margin: 0 15px;
 }
 .customers-item__text {
     padding:  9px 22px 6px 23px;
@@ -33,7 +37,6 @@
     display: block;
     width: 0;
     height: 0;
-    /* border-top: 17px solid #E2E2E2; */
     border-top: 12px solid #E2E2E2;
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
