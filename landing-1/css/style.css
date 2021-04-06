@@ -1,6 +1,7 @@
 @import url("../css/awesome.css");
 @import url("../css/price.css");
 @import url("../css/customers.css");
+@import url("../css/axure.css");
 
 *{
   padding: 0;
@@ -13,4 +14,6 @@
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
+  z-index: 1;
 }
