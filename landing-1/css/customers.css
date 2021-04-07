@@ -18,6 +18,11 @@
 .customers-item {
     width: 298px;
     margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
 }
 .customers-item__text {
     padding:  9px 22px 6px 23px;
@@ -43,19 +48,28 @@
     border-right: 11px solid transparent;
     position: absolute;
     left: 45px;
-    bottom: -10px;
+    top: 100%;
 }
 
 .customers-item__owner {
     margin-top: 22px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .owner-img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
     overflow: hidden;
+}
+.owner-img img{
+    width: auto;
+    height: 100%;
 }
 .owner-info {
     width: 97px;
