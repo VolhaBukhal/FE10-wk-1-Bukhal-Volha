@@ -21,7 +21,7 @@
 .price-item__options{
   list-style-type: none;
 }
-li {
+.price-item__list {
   /* font-family: Open Sans; */
   font-style: normal;
   font-weight: 400;
@@ -35,6 +35,7 @@ li {
 .price-item__options_black {
   background-color: #333333;
   color: #FFFFFF;
+  text-align: center;
 }
 .price-item__title {
   /* font-family: Open Sans; */

@@ -1,0 +1,82 @@
+.header {
+    padding: 20px;
+    background-color: #000000;
+}
+.logo {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.logo::after{
+    content: 'it';
+    display: inline;
+    text-transform: uppercase;
+    color:#EC7979;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav__item {
+    background-color: #000000;
+    margin: 0;
+    position: relative;
+}
+
+.header-nav__list {
+    list-style-type: none;
+    width: 490px;
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+}
+.header-nav__link {
+    text-decoration: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffffffb3; 
+    padding: 0 0 5px 5px;
+}
+
+.header-nav__link{
+    padding: 0 0 4px 4px;;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+.header-nav__link:hover{
+    border-color: #ffffffb3;
+    transition: 0.5s all;
+}
+
+/* hover effect with the help of psudoelement and psudoclass */
+/* .header-nav__link::before{
+    content: '';
+    display: inline;
+    height: 0;
+    width: 2px;
+    margin-left: -5px;
+    background-color: #ffffffb3;
+    transition: 0.5s all ease;
+    position: absolute;
+    
+}
+.header-nav__link::after{
+    content: ' ';
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #ffffffb3;
+    transition: 0.5s all;
+} 
+ 
+.header-nav__link:hover::after{
+    width: 100%;
+}
+.header-nav__link:hover::before{
+    height: 23px;
+} */
