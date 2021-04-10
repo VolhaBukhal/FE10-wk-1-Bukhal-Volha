@@ -5,6 +5,7 @@
 .social__row{   
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .social__info {
     width: 365px;

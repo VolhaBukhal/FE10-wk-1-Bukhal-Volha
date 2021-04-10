@@ -32,6 +32,7 @@
 .first-screen__title:after {
     margin: 0;
     margin-top: 32px;
+    background-color: #ffffff;
 }
 
 .first-screen__descr {
@@ -42,8 +43,5 @@
     margin-top: 39px;
 
 }
-
-
-
 .first-screen__form {
 }
