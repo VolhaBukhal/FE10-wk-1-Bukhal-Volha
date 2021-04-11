@@ -5,6 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    margin-top: 74px;
 }
 .first-screen::after{
     content: '';
