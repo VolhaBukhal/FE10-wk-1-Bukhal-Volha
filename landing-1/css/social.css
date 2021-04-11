@@ -64,9 +64,13 @@
 }  
 
 .fa-google-plus-g:hover{
-    transform:scale(1.5);
+    transform-origin: 80% 80%;
     color: #D93025;
-    transition: 0.5s all ease;
+    /* transform:scale(1.5);
+    transition: 0.5s all ease; */
+    
+    animation: rotate 2s infinite;
+
 }
 
 .fa-pinterest:hover{
@@ -80,15 +84,16 @@
     transition: 0.5s all ease;
    
 }
-.fa-lastfm:hover{
-    transform: scale(1.5);
-    color: #E60023;
-    transition: 0.5s all ease;
+.fa-stumbleupon:hover{
+    color: #EC461E;
+    animation: jumping 2s infinite;
+    
 }
-.fa-wifi:hover{
+.fa-rss:hover{
     color: #1DA1F2;
-    transform: rotate(45deg);
-    transition: 0.5s all ease;
+    transform: rotate(-45deg) translateY(-10px);
+    transition: 0.5s all;
+
 }
 
 
