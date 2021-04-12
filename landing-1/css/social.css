@@ -6,9 +6,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 -15px;
 }
 .social__info {
     width: 365px;
+    margin: 0 15px;
+
 }
 .social__title {
     font-style: normal;
@@ -33,6 +36,7 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    margin: 0 15px;
 }
 .social-contact__item {
     font-size: 42px;

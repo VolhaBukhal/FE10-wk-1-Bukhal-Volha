@@ -1,12 +1,25 @@
 .header {
-    padding: 20px;
+    padding: 20px 0; 
     background-color: #000000;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 5;
 }
-.logo {
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 490px;
+    list-style-type: none;
+}
+.header__logo {
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;
@@ -14,30 +27,21 @@
     line-height: 35px;
     color: #FFFFFF;
 }
-.logo::after{
+.header__logo::after{
     content: 'it';
     display: inline;
     text-transform: uppercase;
     color:#EC7979;
 }
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-}
-.header-nav__item {
-    background-color: #000000;
-    margin: 0;
-    position: relative;
+.header-menu__item {
 }
 
-.header-nav__list {
-    list-style-type: none;
-    width: 490px;
-    display: flex;
-    justify-content: space-between;
-    position:relative;
-}
 .header-nav__link {
+}
+.headermenuv__item {
+}
+
+.header-menu__link {
     text-decoration: none;
     font-family: Open Sans;
     font-style: normal;
@@ -46,17 +50,22 @@
     color: #ffffffb3; 
     padding: 0 0 5px 5px;
 }
-
-.header-nav__link{
+.header-menu__link{
     padding: 0 0 4px 4px;;
     border-bottom: 2px solid transparent;
     border-left: 2px solid transparent;
 }
-.header-nav__link:hover{
+.header-menu__link:hover{
     border-color: #ffffffb3;
     transition: 0.5s all ease;
 }
 
+/* .header-nav__item {
+    background-color: #000000;
+    margin: 0;
+    position: relative;
+} */
+/* !!!!!!!!!!!!!!!!!!!!! нухно исправить, т.к. поменялась верстка секции head и названия классов */
 /* hover effect with the help of psudoelement and psudoclass */
 /* .header-nav__link:first-child:before{
     content: '';
