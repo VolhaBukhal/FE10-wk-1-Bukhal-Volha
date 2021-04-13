@@ -75,6 +75,7 @@
   color: #FFFFFF;
   border: none;
   background: #EC7979;
+  transition: 0.5s all ease;
 }
 .form-btn:hover{
   background-color:#e63535;
