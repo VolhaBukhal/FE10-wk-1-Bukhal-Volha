@@ -19,28 +19,21 @@
     width: 490px;
     list-style-type: none;
 }
-.header__logo {
+.logo {
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 35px;
     color: #FFFFFF;
 }
-.header__logo::after{
+.header__logo{
+    font-size: 30px;
+}
+.logo::after{
     content: 'it';
     display: inline;
     text-transform: uppercase;
     color:#EC7979;
 }
-.header-menu__item {
-}
-
-.header-nav__link {
-}
-.headermenuv__item {
-}
-
 .header-menu__link {
     text-decoration: none;
     font-family: Open Sans;
@@ -54,20 +47,16 @@
     padding: 0 0 4px 4px;;
     border-bottom: 2px solid transparent;
     border-left: 2px solid transparent;
+    transition: 0.5s all ease;
 }
 .header-menu__link:hover{
     border-color: #ffffffb3;
     transition: 0.5s all ease;
 }
 
-/* .header-nav__item {
-    background-color: #000000;
-    margin: 0;
-    position: relative;
-} */
-/* !!!!!!!!!!!!!!!!!!!!! нухно исправить, т.к. поменялась верстка секции head и названия классов */
+
 /* hover effect with the help of psudoelement and psudoclass */
-/* .header-nav__link:first-child:before{
+/* .header-menu__link:first-child:before{
     content: '';
     display: inline;
     height: 0;
@@ -78,7 +67,7 @@
     position: absolute;
     
 }
-.header-nav__link:first-child:after{
+.header-menu__link:first-child:after{
     content: ' ';
     display: block;
     height: 2px;
@@ -87,9 +76,9 @@
     transition: 0.5s all;
 } 
  
-.header-nav__link:hover::after{
+.header-menu__link:hover::after{
     width: 100%;
 }
-.header-nav__link:hover::before{
+.header-menu__link:hover::before{
     height: 23px;
 } */

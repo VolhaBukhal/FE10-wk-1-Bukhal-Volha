@@ -45,6 +45,10 @@
 .fab, .fas{
     color: #cccccc;
 }
+.fa-facebook-f{
+    transition: 0.5s all ease;
+
+}
 .fa-facebook-f:hover{
     color: #1877F2;
     /* animation-name: pulse;
@@ -52,52 +56,52 @@
     animation-iteration-count: infinite; */
     animation: pulse 1s infinite;
 }
-
-.leaf:nth-child(odd) {
-    left: 100%;
-    transform-origin: 0% 100%;
-    animation-name: leaf-odd-grow;
-    animation-duration: 4s;
-    animation-fill-mode: both;
+.fa-twitter{
+    transition: 1s ease;
 }
-
 .fa-twitter:hover{
     color: #1DA1F2;
-    transform-origin: 0 100%;
     animation: flying 2s infinite;
 }  
+.fa-google-plus-g{
+    transition: 0.8s all ease;
+}
 
 .fa-google-plus-g:hover{
     transform-origin: 80% 80%;
     color: #D93025;
-    /* transform:scale(1.5);
-    transition: 0.5s all ease; */
-    
     animation: rotate 2s infinite;
 
 }
-
+.fa-pinterest{
+    transition: 0.5s all ease;
+}
 .fa-pinterest:hover{
     color:#E60023;
     animation: pulse 2s infinite;
 }
 
+.fa-instagram-square{
+    transition: 0.5s all ease;
+}
 .fa-instagram-square:hover{
     transform: scale(1.5);
     color: #AA3BA1;
+}
+.fa-stumbleupon{
     transition: 0.5s all ease;
-   
+
 }
 .fa-stumbleupon:hover{
     color: #EC461E;
-    animation: jumping 2s infinite;
-    
+    animation: jumping 0.5s infinite;
+}
+.fa-rss {
+    transition: 0.5s all;
 }
 .fa-rss:hover{
     color: #1DA1F2;
     transform: rotate(-45deg) translateY(-10px);
-    transition: 0.5s all;
-
 }
 
 

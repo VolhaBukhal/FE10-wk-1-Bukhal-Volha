@@ -17,7 +17,7 @@
   <header class="header">
     <div class="container">
       <div class="header__row">
-        <div class="header__logo">AX</div>
+        <div class="logo header__logo">AX</div>
         <nav>
           <ul class="header-menu">
             <li class="header-menu__item">
@@ -40,30 +40,41 @@
       </div>
     </div>
   </header>
+
   <section class="first-screen">
     <div class="container">
       <div class="first-screen__row">
-        <div class="first-screen__info">
+        <class class="first-screen__info">
           <div class="logo first-screen__logo">AX</div>
           <h2 class="title first-screen__title white__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
           <div class="descr first-screen__descr">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aenean </p>
           </div>
           <a href="#" class=" btn-view__link firs-screen__link">Download</a>
-        </div>
+        </class>
         <div class="first-screen__form">
-          <h3 class="first-screen__form_title">
-            Try Your <span class="color-title">FREE</span> Trial Today</h3>
-          <form action="#" class="free-trial__form">
-            <input type="text" name="name" placeholder="Name">
-            <input type="text" name="email" placeholder="Email">
-            <input type="password" name="password" placeholder="Password">
-            <input type="submit" name="submit" value="Get Started" >
-          </form>
+          <div class="form-content">
+            <h3 class="form-content__title">
+                Try Your <span class="color-title">FREE</span> Trial Today
+            </h3>
+            <form action="#" id="form-content__form">
+              <div class="form-item first-screen__form-item ">
+                <label for="name" class="form-item__label">Name</label>
+                <input type="text" name="name" required></div>
+              <div class="form-item first-screen__form-item">
+                <label for="email" class="form-item__label" >Email</label>
+                <input type="email" name="email" required></div>
+              <div class="form-item first-screen__form-item">
+                <label for="password" class="form-item__label">Password</label>
+                <input type="password" name="password" required></div>
+            </form>
+          </div>
+          <button class="form-btn first-screen__form-btn" form="form-content__form">Get Started</button>
         </div>
       </div>
     </div>
   </section>
+
   <section class="social">
     <div class="container">
       <div class="social__row">
@@ -200,7 +211,7 @@
       </div>
     </div>
   </section>
-  
+
   <section class="customers">
     <div class="container">
       <h2 class="title customer__title">
@@ -291,6 +302,42 @@
       <a href="#" class="btn-view__link axure__link">Download</a>
     </div>
 
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2 class="title contact__title">
+        contact us
+      </h2>
+      <div class="descr contact__descr">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <form action="#" id="contact-form">
+        <div class="contact-form__left">
+          <div class="form-item contact__form-item">
+            <label for="name" class="label contact-item__label ">Name</label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="form-item contact__form-item">
+            <label for="email" class="label contact-item__label" required>Email</label>
+            <input type="email" name="email">
+          </div>
+          <div class="form-item contact__form-item">
+            <label for="password" class="label contact-item__label" required>Password</label>
+            <input type="password" name="password">
+          </div>
+          
+        </div>
+        <div class="contact-form__right">
+          <div class="form-item contact__form-item">
+            <label for="message" class="label contact-item__label">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+        </div>
+      </form>
+      <button form="contact-form"  class="form-btn contact__form-btn">Send Message</button>
+      
+    </div> 
   </section>
 
   <footer class="footer">
