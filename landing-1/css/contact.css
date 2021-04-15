@@ -16,7 +16,7 @@
     flex-wrap: nowrap;
 }
 .contact-form__left, .contact-form__right {
-    width: 478px;
+    width: 45%;
     margin: 0 15px;
 }
 
@@ -37,6 +37,7 @@
 .contact__form-item textarea{
     height: 216px;
     resize: none;
+    overflow: auto;
 }
 
 .contact__form-btn{

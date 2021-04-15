@@ -27,6 +27,7 @@
 }
 .header__logo{
     font-size: 30px;
+    text-decoration: none;
 }
 .logo::after{
     content: 'it';
