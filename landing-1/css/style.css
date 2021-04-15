@@ -9,6 +9,7 @@
 @import url("../css/first-screen.css");
 @import url("../css/form.css");
 @import url("../css/contact.css");
+@import url("../css/tabs.css");
 
 
 
@@ -27,13 +28,21 @@
   z-index: 1;
 }
 
+.descr {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #86878B;
+}
+
 .btn-view__link{
   text-decoration: none;
   display: block;
   width: 135px;
   padding: 10px;
   text-align: center;
-  color: #FFFFFF;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;

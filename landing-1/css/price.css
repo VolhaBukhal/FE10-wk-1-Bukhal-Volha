@@ -22,7 +22,10 @@
 .price-item:hover {
   margin-top: -15px;
 }
- 
+
+.price__descr{
+  margin-top: 34px;
+}
 
 .price-item__options{
   list-style-type: none;
