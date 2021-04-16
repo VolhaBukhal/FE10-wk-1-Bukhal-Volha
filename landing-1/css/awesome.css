@@ -36,18 +36,10 @@
   margin-top: 25px;
 } ***************************/
 
-.descr {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  text-align: center;
-  color: #86878B;
-  
-}
+
 .awesome__descr{
   margin-top: 30px;
+  text-align: center;
 
 }
 

@@ -23,12 +23,17 @@
   font-size: 15px;
   text-transform: uppercase;
   color: #FFFFFF;
+  transition: 0.5s all ease;
 }
 .tab-item:first-child{
   margin-top: 0;
 }
+
 .tab-item_active {
   background-color: #EC7979;
+}
+.tab-item:hover{
+  transform: scale(1.1);
 }
 .tabs-left{
   margin: 0 15px;
