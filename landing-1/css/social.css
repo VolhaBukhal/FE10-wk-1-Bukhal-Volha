@@ -16,7 +16,6 @@
 .social__title {
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
     line-height: 27px;
     display: flex;
     color: #333333;
@@ -27,7 +26,6 @@
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
     line-height: 19px;
 }
 .social__contact {
@@ -39,7 +37,7 @@
     margin: 0 15px;
 }
 .social-contact__item {
-    font-size: 42px;
+    font-size: 2.15rem;
 }
 
 .fab, .fas{

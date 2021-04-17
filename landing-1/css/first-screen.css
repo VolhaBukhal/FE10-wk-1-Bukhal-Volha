@@ -6,7 +6,6 @@
     background-repeat: no-repeat;
     position: relative;
     margin-top: 74px;
-    height: 100vh;
 }
 .first-screen::after{
     content: '';
@@ -67,7 +66,6 @@
 .form-content__title {
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
     line-height: 56px;
     color: #333333;
 }
