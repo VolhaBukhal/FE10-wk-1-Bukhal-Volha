@@ -316,11 +316,25 @@
   .contact__form-item textarea{
     height: 208px;
   }
+  #contact-form {
+    margin-top: 0;
+    flex-wrap: wrap;
+  }
+  .contact-form__left, .contact-form__right{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .contact__form-btn{
+    margin-top: 20px;
+  }
+  .contact__form-item textarea{
+    height: 160px;
+  } 
 }
 
 @media(max-width: 576px) {
   .header {
-    background-color: darkpurple;
+    background-color: purple;
   }
   html{
     font-size: 12px;
@@ -352,6 +366,9 @@
    }
    .first-screen__descr{
      text-align: center;
+   }
+   .btn-view__link{
+     width: 80%;
    }
    .first-screen__link{
      margin: 0 auto;
@@ -396,19 +413,5 @@
   .contact__descr {
     margin-top: 20px;
     text-align: center;
-  } 
-  #contact-form {
-    margin-top: 0;
-    flex-wrap: wrap;
-  }
-  .contact-form__left, .contact-form__right{
-    width: 100%;
-    margin-top: 20px;
-  }
-  .contact__form-btn{
-    margin-top: 20px;
-  }
-  .contact__form-item textarea{
-    height: 160px;
   } 
 }
