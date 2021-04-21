@@ -1,0 +1,46 @@
+.features {
+    padding: 47px 0 124px 0;
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+
+    }
+    &-item{
+        width: 296px;
+        margin: 0 15px;
+        margin-top: 74px;
+        
+        &__img_wrapp{
+            width: 80px;
+            height: 60px;
+            margin: 0 auto;
+        }
+        &__title{
+            margin-top: 34px;
+            font-family: Raleway;
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            text-transform: uppercase;
+            color: #2d3033;
+        }
+        &__descr{
+            margin-top: 25px;
+            font-family: Raleway;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: center;
+            color: $grey_color;
+        }
+    }
+}
