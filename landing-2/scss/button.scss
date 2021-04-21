@@ -1,0 +1,17 @@
+.btn-view__link {
+  display: block;
+  width: 200px;
+  line-height: 46px;
+  background-color: $red_color;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white_color;
+  transition: 0.5s all ease;
+  &:hover{
+    transform: scale(1.1);
+    background-color: $white_with_opacity;
+    color: $red_color;
+    font-weight: bold;
+  }
+}
