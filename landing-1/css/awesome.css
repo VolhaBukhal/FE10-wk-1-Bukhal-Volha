@@ -12,6 +12,7 @@
 }
 .awesome__title::after {
   margin-top: 25px;
+  text-align: center;
 }
 
 /**************************

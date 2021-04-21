@@ -20,6 +20,7 @@
 
 .white__title{
     color: #FFFFFF;
+    text-align: center;
 }
 .axure__title::after {
     margin-top: 34px;

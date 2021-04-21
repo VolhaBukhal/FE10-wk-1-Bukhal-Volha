@@ -1,11 +1,15 @@
 .contact {
     padding: 44px 0  80px 0;
 }
+.contact__title{
+    text-align: center;
+}
 .contact__title:after {
     margin-top: 34px;
 }
 .contact__descr {
     margin-top: 34px;
+    text-align: center;
 }
 #contact-form{
     margin: 0 -15px;

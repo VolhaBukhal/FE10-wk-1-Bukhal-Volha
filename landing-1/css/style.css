@@ -103,21 +103,38 @@
 .form-btn:hover{
   background-color:#e63535;
 }
+/* drowing the burger */
 .hamburger{
-  /* display: block;  */
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 26px;
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 20px;
 }
 .hamburger span {
-  /* display: block; */
+  display: block;
   height: 2px;
   width: 100%;
-  background-color: #fff;
-  margin-bottom: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 9px;
 }
+.hamburger:before,
+.hamburger:after{
+  content: '';
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+.hamburger:before{
+  top: 0;
+}
+.hamburger:after{
+  bottom: 0;
+}
+
 
 /* !!!!!!!ADAPTATION!!!!!!!! */
 @media(min-width: 1201px){
@@ -288,8 +305,11 @@
     margin-top: 50px;
     height: none;
   }
+  .hamburger{
+    display: block;
+  }
   .header-menu{
-    max-width: 400px;
+    display: none;
   }
   .main__title{
     font-size: 25px;
@@ -342,15 +362,7 @@
   .container {
     max-width: 290px;
   }
-  .hamburger{
-    display: block;
-  }
-  .hamburger span{
-    display: block;
-  }
-  .header-menu{
-    display: none;
-  }
+ 
   .first-screen{
     margin-top: 44px;
     padding: 15px 0;
