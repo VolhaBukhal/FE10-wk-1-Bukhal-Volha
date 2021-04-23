@@ -1,35 +1,37 @@
 .header {
     padding: 20px 0; 
-    /* background-color: #000000; */
+    background-color: #000000;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 50;
+    z-index: 5;
 }
-.header:before{
+/* .header:after{
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width:100%;
     height: 100%;
-    background-color:#000000;
-    z-index: 2;
-}
+    background-color: rgb(122, 122, 21);
+    z-index: -1;
+} */
 
 .header__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    
+  
 }
 .header-menu {
     display: flex;
     justify-content: space-between;
     width: 490px;
     list-style-type: none;
+    position: relative;
+    
 }
 .logo {
     font-family: Raleway;
@@ -37,13 +39,12 @@
     font-weight: normal;
     color: #FFFFFF;
     position: relative;
-    /* z-index: 4; */
+   
 }
 .header__logo{
     font-size: 30px;
     text-decoration: none;
     position: relative;
-    z-index: 4;
 }
 .logo::after{
     content: 'it';
@@ -66,10 +67,10 @@
     border-left: 2px solid transparent;
     transition: 0.5s all ease;
 }
-.header-menu__link:hover{
+/* .header-menu__link:hover{
     border-color: #ffffffb3;
     transition: 0.5s all ease;
-}
+} */
 
 
 /* hover effect with the help of psudoelement and psudoclass */

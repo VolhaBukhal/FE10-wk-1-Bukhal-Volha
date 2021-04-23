@@ -148,12 +148,17 @@
     height: 100vh;
   }
 }
+@media(min-width: 767px){
+  .header-menu__link:hover {
+    border-color: #ffffffb3;
+    transition: 0.5s all ease;
+  }  
+}
 @media(max-width: 1200px ){
   .container {
     max-width: 960px;
   }
   .header {
-    background-color: darkred;
     padding: 10px 0;
   }
   .first-screen {
@@ -208,9 +213,6 @@
   }
   html{
     font-size: 15px;
-  }
-  .header {
-    background-color: darkgreen;
   }
   .header__logo{
     font-size: 1.875rem;
@@ -299,9 +301,6 @@
   body.lock{
     overflow: hidden;
   }
-  .header {
-    background-color: darkblue;
-  }
   html{
     font-size:14px;
   }
@@ -312,9 +311,11 @@
     margin-top: 50px;
     height: none;
   }
+
   .hamburger{
     display: block;
-    
+    z-index: 2;
+   
   }
   .hamburger.active:before{
     transform: rotate(45deg);
@@ -329,9 +330,9 @@
   }
   .header-menu{
     position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100%;
+    top: 50px;
+    left: -100%;
+    width: 50%;
     height: 100%;
     background-color: #e63535;
     padding: 70px 10px 20px 10px ;
@@ -339,8 +340,17 @@
     transition: 0.5s all ease;
     overflow: auto;
   }
+  .header__logo{
+    z-index: 2;
+  }
   .header-menu.active{
-    top: 0;
+    left: 0;
+    z-index: -3;
+  }
+  .header-menu__item{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
   }
   .header-menu__link{
     font-size: 20px;
@@ -387,17 +397,17 @@
 }
 
 @media(max-width: 576px) {
-  .header {
-    background-color: purple;
-  }
   html{
     font-size: 12px;
   }
   .container {
     max-width: 290px;
   }
- 
-  .first-screen{
+  .header-menu{
+    top: 45px;
+  }
+  
+    .first-screen{
     margin-top: 44px;
     padding: 15px 0;
   }
