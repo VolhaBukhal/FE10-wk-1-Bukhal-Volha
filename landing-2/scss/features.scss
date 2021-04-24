@@ -9,7 +9,7 @@
         flex-wrap: wrap;
         margin: 0 -15px;
         @media(max-width: 977px) {
-            justify-content: space-around;
+            justify-content: space-evenly;
         }
 
     }

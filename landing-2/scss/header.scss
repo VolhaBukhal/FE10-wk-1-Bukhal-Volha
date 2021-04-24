@@ -48,6 +48,9 @@
       text-transform: uppercase;
       font-family: Raleway;
       font-size: 13px;
+      @media(max-width: 950px){
+        justify-content: space-between;
+      }
       &_item {
         margin-left: 59px;
         border-bottom: 2px solid transparent;
@@ -59,13 +62,10 @@
           border-color: $white_with_opacity;
         }
         @media(max-width: 1020px){
-          margin-left: 50px;
+          margin-left: 45px;
         }
-        @media(max-width: 960px){
-          margin-left: 35px;
-        }
-        @media(max-width: 890px){
-          margin-left: 20px;
+        @media(max-width: 950px){
+          margin-left: 0;
         }
         @media(max-width: 768px) {
           display: none;
