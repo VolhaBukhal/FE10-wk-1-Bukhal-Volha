@@ -46,6 +46,11 @@
     padding: 30px 0 0 0;
   }
 }
+@media (max-width: 960px) {
+  .header {
+    padding: 15px 0 0 0;
+  }
+}
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -58,6 +63,11 @@
 @media (max-width: 960px) {
   .header-nav {
     padding-bottom: 29px;
+  }
+}
+@media (max-width: 960px) {
+  .header-nav {
+    padding-bottom: 14px;
   }
 }
 .header-nav__logo {
@@ -329,6 +339,7 @@
 .works {
   display: flex;
   flex-wrap: wrap;
+  min-width: 0;
 }
 .works-item {
   width: 25%;
@@ -348,17 +359,6 @@
 }
 @media (max-width: 768px) {
   .works-item {
-    width: 50%;
-  }
-  .works-item:nth-child(5), .works-item:nth-child(6) {
-    display: none;
-  }
-}
-@media (max-width: 520px) {
-  .works-item {
-    width: 100%;
-  }
-  .works-item:nth-child(3), .works-item:nth-child(4) {
     display: none;
   }
 }
@@ -409,4 +409,75 @@
 }
 .works-item__link_descr span {
   font-weight: normal;
+}
+
+.slick-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 567px) {
+  .slick-slider {
+    width: 100%;
+  }
+}
+.slick-slider .slick-prev, .slick-slider .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  font-size: 0;
+  width: 20px;
+  height: 40px;
+}
+@media (max-width: 567px) {
+  .slick-slider .slick-prev, .slick-slider .slick-next {
+    display: none;
+  }
+}
+.slick-slider .slick-prev {
+  left: -40px;
+  background: url("../img/icons/arrow_left.png") 0 0/contain no-repeat;
+}
+.slick-slider .slick-next {
+  right: -45px;
+  background: url("../img/icons/arrow_right.png") 0 0/contain no-repeat;
+}
+.slick-slider .slick-dots {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 567px) {
+  .slick-slider .slick-dots {
+    position: absolute;
+    bottom: 5%;
+  }
+}
+.slick-slider .slick-dots button {
+  margin-right: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  font-size: 0;
+  background-color: #e84545;
+  border-color: #e84545;
+}
+@media (max-width: 567px) {
+  .slick-slider .slick-dots button {
+    background-color: #ffffff;
+    border-color: #6c7279;
+  }
+}
+.slick-slider .slick-active button {
+  background-color: #ffffff;
+}
+@media (max-width: 567px) {
+  .slick-slider .slick-active button {
+    background-color: #6c7279;
+  }
 }
