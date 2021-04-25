@@ -2,13 +2,14 @@
 .works {
     display: flex;
     flex-wrap: wrap;
-    min-width: 0;
+    min-width: 0; //this properti set to slider work
     &-item{
         width: 25%;
         height: 350px;
         flex-grow:1;
         position: relative;
         border: 1px solid #ffffff;
+        transition: 0.5s all ease;
         @media(max-width: 1150px){
             width: 33.333%;
             height: 320px;
@@ -18,7 +19,10 @@
         }
         @media(max-width: 768px) {
             display: none;
-        }   
+        }  
+        &:hover &__link_descr {
+            display: block;
+        } 
     // !!!! Don't need in case of slick slider using       
         // @media(max-width: 768px) {
         //     width: 50%;
@@ -70,6 +74,7 @@
             }
         }
         &__link_descr {
+            display: none;
             font-family: Raleway;
             font-size: 14px;
             font-weight: bold;
@@ -83,6 +88,7 @@
             span{
                 font-weight: normal;
             }
+            
         }
     }
 }  

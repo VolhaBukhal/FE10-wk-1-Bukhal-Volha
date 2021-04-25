@@ -1,50 +1,40 @@
-// $(document).ready(function(){
-//     $('.works').slick({
-//         dots: true,
-//         infinite: true,
-//         speed: 500,
-//         fade: true,
-//         cssEase: 'linear',
-//         slidesToShow: 4,
-//         responsive: [
-//             {
-//                 breakpoint: 800,
-//                 settings: "unslick"
-//             }
-//         ]
-//     });
-//   });
-// !!! Get code from stackoverflow Above code don't work.
-var sliderElem = $(".works"),
-    sliderBool = false,
-    sliderBreakpoint = 768,
-    sliderSettings = {
+// Слайдер не вызывается при загрузке страницы, только при запуске через prepros
+function mobileOnlySlider() {
+    $('.works').slick({
         arrows: true,
         dots: true,
-        autoplaySpeed: 3000,
-        mobileFirst: true,
-        responsive: [
-            {
-                breakpoint: sliderBreakpoint,
-                settings: "unslick"
-            }
-        ]
-    };
-function sliderInit() {
-    if (window.innerWidth <= sliderBreakpoint) {
-        if (sliderBool == false) {
-            sliderElem.slick(sliderSettings);
-            sliderBool = true;
-        }
-    } else {
-        sliderBool = false;
+        autoplay: false,
+        speed: 1000,
+        autoplaySpeed: 5000
+    });
     }
-}
+    if(window.innerWidth < 768) {
+    mobileOnlySlider();
+    }
+    
+    $(window).resize(function(e){
+        if(window.innerWidth < 768) {
+            if(!$('.works').hasClass('slick-initialized')){
+                mobileOnlySlider();
+            }
+    
+        }else{
+            if($('.works').hasClass('slick-initialized')){
+                $('.works').slick('unslick');
+            }
+        }
+    });
 
-// resize
-$(window).resize(function () {
-    sliderInit();
-});
+    $(document).ready(function(){
+        $('.feeedback-slider').slick({
+            arrows: false,
+            dots: true,
+            infinite: true,
+            rows: 1
+          
+        });
+      });
+    
+    
 
- 
 

@@ -1,3 +1,4 @@
+//section works slider
 .slick-slider{
     width: 80%;
     margin: 0 auto;
@@ -20,14 +21,11 @@
             // z-index: 2;
             display: none;
         }
-
-        
     }
     .slick-prev{
         left: -40px;
         background: url('../img/icons/arrow_left.png') 0 0/contain no-repeat;
-        
-        
+            
     } 
     .slick-next{
         right: -45px;
@@ -66,15 +64,17 @@
                 
             }
         }
-        
-
     }
-
 }
-    
 
+// !!!!style for feedback-slider 
+.feedback-slider{
+    .slick-slider{
+        width: vw;
+    }
+    .slick-next {
+        right: 0;
+    }
+} 
 
-
-
-
-
+  

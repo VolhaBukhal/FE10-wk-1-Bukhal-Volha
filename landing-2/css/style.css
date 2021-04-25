@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -39,7 +40,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 5;
 }
 @media (max-width: 960px) {
   .header {
@@ -347,6 +348,7 @@
   flex-grow: 1;
   position: relative;
   border: 1px solid #ffffff;
+  transition: 0.5s all ease;
 }
 @media (max-width: 1150px) {
   .works-item {
@@ -361,6 +363,9 @@
   .works-item {
     display: none;
   }
+}
+.works-item:hover .works-item__link_descr {
+  display: block;
 }
 .works-item__img {
   display: block;
@@ -396,6 +401,7 @@
   opacity: 1;
 }
 .works-item__link_descr {
+  display: none;
   font-family: Raleway;
   font-size: 14px;
   font-weight: bold;
@@ -480,4 +486,191 @@
   .slick-slider .slick-active button {
     background-color: #6c7279;
   }
+}
+
+.feedback-slider .slick-slider {
+  width: vw;
+}
+.feedback-slider .slick-next {
+  right: 0;
+}
+
+.team {
+  padding: 101px 0;
+}
+@media (max-width: 1200px) {
+  .team {
+    padding: 71px 0;
+  }
+}
+@media (max-width: 1200px) and (max-width: 860px) {
+  .team {
+    padding: 30px 0;
+  }
+}
+.team__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+@media (max-width: 1200px) {
+  .team__row {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+.team-item {
+  width: 270px;
+  margin: 0 15px;
+}
+@media (max-width: 1200px) {
+  .team-item {
+    margin: 30px 65px 0 65px;
+  }
+}
+@media (max-width: 860px) {
+  .team-item {
+    margin: 30px 15px 0 15px;
+  }
+}
+@media (max-width: 550px) {
+  .team-item {
+    width: 250px;
+    margin: 30px 20px 0 20px;
+  }
+}
+.team-item__img {
+  width: 100%;
+  height: 270px;
+  position: relative;
+}
+@media (max-width: 550px) {
+  .team-item__img {
+    height: 250px;
+  }
+}
+.team-item__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team-item__title {
+  margin-top: 30px;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: normal;
+  color: #2d3033;
+}
+@media (max-width: 1200px) {
+  .team-item__title {
+    text-align: center;
+  }
+}
+.team-item__position {
+  margin-top: 16px;
+  font-family: Raleway;
+  font-size: 13px;
+  color: #e84545;
+}
+@media (max-width: 1200px) {
+  .team-item__position {
+    text-align: center;
+  }
+}
+.team-item__descr {
+  margin-top: 29px;
+  font-family: Raleway;
+  font-size: 14px;
+  color: #6c7279;
+}
+@media (max-width: 1200px) {
+  .team-item__descr {
+    text-align: center;
+  }
+}
+@media (max-width: 620px) {
+  .team-item__descr {
+    display: none;
+  }
+}
+.team-item__social {
+  margin-top: 31px;
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+@media (max-width: 1200px) {
+  .team-item__social {
+    justify-content: space-evenly;
+  }
+}
+.team-item__social li {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e8ecee;
+  margin-right: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s all ease;
+}
+.team-item__social li:hover {
+  background-color: #292D4C;
+  opacity: 0.95;
+}
+.team-item__social li:hover a {
+  color: #e84545;
+}
+.team-item__social li a {
+  font-size: 16px;
+  color: #6c7279;
+}
+
+.feedback-item {
+  display: flex;
+  min-width: 0;
+}
+.feedback-item__img {
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+.feedback-item__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.feedback-item__text {
+  width: 50%;
+  background-color: #53354a;
+}
+.feedback-item__text_quote {
+  width: 58%;
+  margin: 114px 0 0 8%;
+  font-size: 36px;
+  font-family: "Cardo";
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.2;
+  text-align: left;
+  color: #ffffff;
+}
+.feedback-item__text_owner {
+  width: 80%;
+  margin: 30px 0 0 8%;
+  font-family: Raleway;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.62;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
 }

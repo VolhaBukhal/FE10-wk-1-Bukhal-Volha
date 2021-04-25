@@ -10,15 +10,24 @@ $red_color: #e84545;
   font-family: 'Open Sans', sans-serif;
 }
 
+
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
-@import'./button.scss';
-@import'./header.scss';
-@import'./features.scss';
-@import'./firstscreen.scss';
-// @import'./works_grid.scss';
-@import'./works_flex.scss';
-@import'./slider.scss';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
+
+@import'button.scss';
+@import'header.scss';
+@import'features.scss';
+@import'firstscreen.scss';
+// @import'works_grid.scss';
+@import'works_flex.scss';
+@import'slider.scss';
+@import'team.scss';
+@import'feedback.scss';
