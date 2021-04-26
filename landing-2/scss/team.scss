@@ -9,6 +9,7 @@
     &__row{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin: 0 -15px;
         @media (max-width: 1200px ){
             flex-wrap: wrap;
@@ -16,7 +17,7 @@
         }
     }
     &-item{
-        width: 270px;
+        width: 25%;
         margin: 0 15px;
         @media (max-width: 1200px ){
             margin: 30px 65px 0 65px;
@@ -25,7 +26,7 @@
             margin: 30px 15px 0 15px;
         }
         @media (max-width: 550px ){
-            width: 250px;
+            // width: 250px;
             margin: 30px 20px 0 20px;
         }
 
