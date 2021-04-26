@@ -348,7 +348,10 @@
   flex-grow: 1;
   position: relative;
   border: 1px solid #ffffff;
-  transition: 0.5s all ease;
+  transition: 2s all ease;
+}
+.works-item:hover .works-item__link_descr {
+  display: flex;
 }
 @media (max-width: 1150px) {
   .works-item {
@@ -363,9 +366,6 @@
   .works-item {
     display: none;
   }
-}
-.works-item:hover .works-item__link_descr {
-  display: block;
 }
 .works-item__img {
   display: block;
@@ -385,35 +385,26 @@
   left: 0;
   z-index: 3;
 }
-.works-item__link:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  background-color: rgba(232, 69, 69, 0.9);
-  transition: 0.5s all ease;
-}
-.works-item__link:hover:after {
-  opacity: 1;
-}
 .works-item__link_descr {
-  display: none;
   font-family: Raleway;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
   color: #ffffff;
+  background-color: rgba(232, 69, 69, 0.9);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 3;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  transition: 2s all ease;
 }
-.works-item__link_descr span {
+.works-item__type {
+  margin-top: 20px;
   font-weight: normal;
 }
 
@@ -489,10 +480,15 @@
 }
 
 .feedback-slider .slick-slider {
-  width: vw;
+  width: 100%;
 }
-.feedback-slider .slick-next {
-  right: 0;
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
 }
 
 .team {
@@ -650,11 +646,15 @@
 .feedback-item__text {
   width: 50%;
   background-color: #53354a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 .feedback-item__text_quote {
-  width: 58%;
-  margin: 114px 0 0 8%;
+  width: 80%;
   font-size: 36px;
+  margin-left: 8%;
   font-family: "Cardo";
   font-weight: normal;
   font-stretch: normal;
@@ -662,6 +662,16 @@
   line-height: 1.2;
   text-align: left;
   color: #ffffff;
+}
+@media (max-width: 1200px) {
+  .feedback-item__text_quote {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .feedback-item__text_quote {
+    font-style: 20px;
+  }
 }
 .feedback-item__text_owner {
   width: 80%;

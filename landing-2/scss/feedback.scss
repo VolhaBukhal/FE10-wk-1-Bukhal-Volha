@@ -18,10 +18,14 @@
         &__text{
             width: 50%;
             background-color:#53354a;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
             &_quote{
-                width: 58%;
-                margin: 114px 0 0 8%;
+                width: 80%;
                 font-size: 36px;
+                margin-left: 8%;
                 font-family: 'Cardo';
                 font-weight: normal;
                 font-stretch: normal;
@@ -29,6 +33,12 @@
                 line-height: 1.2;
                 text-align: left;
                 color: #ffffff;
+                @media(max-width: 1200px) {
+                    font-size: 30px;
+                }
+                @media(max-width: 1200px) {
+                    font-style: 20px;
+                }
             } 
             &_owner{
                 width: 80%;
@@ -42,6 +52,7 @@
                 text-align: left;
                 color: #ffffff;
                 text-transform: uppercase;
+                
             }
         }
     }

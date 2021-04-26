@@ -1,4 +1,6 @@
 // Слайдер не вызывается при загрузке страницы, только при запуске через prepros
+
+
 function mobileOnlySlider() {
     $('.works').slick({
         arrows: true,
@@ -34,6 +36,9 @@ function mobileOnlySlider() {
           
         });
       });
+
+
+
     
     
 

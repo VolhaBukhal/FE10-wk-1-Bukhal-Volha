@@ -70,11 +70,18 @@
 // !!!!style for feedback-slider 
 .feedback-slider{
     .slick-slider{
-        width: vw;
+        width: 100%;
     }
-    .slick-next {
-        right: 0;
-    }
+
 } 
+
+.slick-slider{
+    width: 100%;
+}
+
+.slick-initialized .slick-slide{
+    display: flex;
+}
+
 
   
