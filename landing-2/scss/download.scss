@@ -1,0 +1,39 @@
+.download {
+  padding: 100px 0;
+  @media(max-width: 950px){
+    padding: 70px 0;
+  }
+  @media(max-width: 550px){
+    padding: 50px 0;
+  }
+  &__title{
+    font-family: Raleway;
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    color: #2d3033;
+  }
+  &__subtitle{
+    margin-top: 16px;
+    font-family: Raleway;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2d3033;
+  }
+  &__link{
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 1px solid transparent;
+    @media(max-width: 550px){
+      width: 80%;
+    }
+
+    &:hover{
+      border: 1px solid $red_color;
+    }
+  }
+
+}

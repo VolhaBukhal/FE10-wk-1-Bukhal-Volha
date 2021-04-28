@@ -1,7 +1,5 @@
-$white_color: #ffffff;
-$white_with_opacity: rgba(255, 255, 255, 0.75);;
-$grey_color: #6c7279;
-$red_color: #e84545;
+
+
 
 *{
   padding: 0;
@@ -21,7 +19,7 @@ $red_color: #e84545;
 
 @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
 
-
+@import'./veriables.scss'; 
 @import'./button.scss';
 @import'./header.scss';
 @import'./features.scss';
@@ -31,3 +29,5 @@ $red_color: #e84545;
 @import'./slider.scss';
 @import'./team.scss';
 @import'./feedback.scss';
+@import'./download.scss';
+@import'./footer.scss';
