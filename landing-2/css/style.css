@@ -481,7 +481,6 @@
 .team__row {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin: 0 -15px;
 }
 @media (max-width: 1200px) {
@@ -491,7 +490,7 @@
   }
 }
 .team-item {
-  width: 25%;
+  width: 270px;
   margin: 0 15px;
 }
 @media (max-width: 1200px) {
@@ -506,6 +505,7 @@
 }
 @media (max-width: 550px) {
   .team-item {
+    width: 250px;
     margin: 30px 20px 0 20px;
   }
 }
