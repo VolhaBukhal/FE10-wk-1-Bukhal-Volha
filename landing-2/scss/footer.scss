@@ -80,8 +80,14 @@
       font-weight: normal;
       text-align: center;
       color: #808080;
-      span{
-        color: #ffffff;
+    }
+    &__link{
+      color: #ffffff;
+      text-decoration: none;
+      border-bottom: 1px solid  transparent;
+      transition: 0.5s all ease;
+      &:hover{
+        border-bottom: 1px solid #ffffff;
       }
     }
   } //footer-bottom
@@ -90,9 +96,12 @@
   }
 }
 
-// .footer-item:first-child{
-//   .footer-item__title{
-//     color: red;
-//   }
-// }
+.footer-bottom__text {
+}
+.fas {
+}
+.fa-heart {
+}
+.footer-bottom__link {
+}
  
