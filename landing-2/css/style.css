@@ -26,7 +26,7 @@
   transition: 0.5s all ease;
 }
 .btn-view__link:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   background-color: rgba(255, 255, 255, 0.75);
   color: #e84545;
   font-weight: bold;
@@ -353,7 +353,7 @@
   transition: 2s all ease;
 }
 .works-item:hover .works-item__link_descr {
-  display: flex;
+  opacity: 1;
 }
 @media (max-width: 1150px) {
   .works-item {
@@ -405,7 +405,8 @@
   text-align: center;
   color: #ffffff;
   background-color: rgba(232, 69, 69, 0.9);
-  display: none;
+  display: flex;
+  opacity: 0;
   flex-direction: column;
   justify-content: center;
   position: absolute;
@@ -414,7 +415,7 @@
   width: 100%;
   height: 100%;
   z-index: 4;
-  transition: 2s all ease;
+  transition: 0.5s all ease;
 }
 .works-item__type {
   margin-top: 20px;
@@ -826,8 +827,14 @@
   text-align: center;
   color: #808080;
 }
-.footer-bottom__text span {
+.footer-bottom__link {
   color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.5s all ease;
+}
+.footer-bottom__link:hover {
+  border-bottom: 1px solid #ffffff;
 }
 .footer .fa-heart {
   color: #e84545;
