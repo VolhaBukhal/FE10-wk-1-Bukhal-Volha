@@ -20,24 +20,20 @@
                 display: none;
             }
         }
+       
         @media(max-width: 768px) {
-            display: none;
-        }  
+            width: 50%;
+            &:nth-child(5), &:nth-child(6) {
+                display: none;
+            } 
+        }
         
-    // !!!! Don't need in case of slick slider using       
-        // @media(max-width: 768px) {
-        //     width: 50%;
-        //     &:nth-child(5), &:nth-child(6) {
-        //         display: none;
-        //     } 
-        // }
-        
-        // @media(max-width: 520px) {
-        //     width: 100%;
-        //     &:nth-child(3), &:nth-child(4) {
-        //         display: none;
-        //     }
-        // }
+        @media(max-width: 520px) {
+            width: 100%;
+            &:nth-child(3), &:nth-child(4) {
+                display: none;
+            }
+        }
         &__img{
             display: block;
             position: absolute;
