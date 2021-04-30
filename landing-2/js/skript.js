@@ -37,15 +37,15 @@
     //     });
     //   });
 
-     $(document).ready(function(){
-      $('.feeedback-slider').slick({
-        dots: true,
-        arrows: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-      });
-    });
+$(document).ready(function(){
+  $('.feeedback-slider').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 1200,
+    slidesToShow: 1
+  });
+});
 
 
 
