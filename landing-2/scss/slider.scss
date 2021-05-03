@@ -19,6 +19,9 @@
     bottom: 10%;
     right: 25%;
     transform: translateX(50%);
+    @media(max-width: 951px){
+        right: 30%;
+    }
     @media(max-width: 800px){
         bottom: 3%;
         right: 50%;

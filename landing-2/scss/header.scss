@@ -57,6 +57,21 @@
       @media(max-width: 950px){
         justify-content: space-between;
       }
+      @media(max-width: 768px) {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100%;
+        background-color: #3a3e64;
+        flex-direction: column;
+        justify-content: center;
+        .active{
+          left: 0;
+        }
+        
+      }
+      
       &_item {
         margin-left: 59px;
         border-bottom: 2px solid transparent;
@@ -73,9 +88,16 @@
         @media(max-width: 950px){
           margin-left: 0;
         }
-        @media(max-width: 768px) {
-          display: none;
-        } 
+        @media(max-width: 768px){
+          width: 100%;
+          padding: 25px;
+          font-size: 18px;
+          text-align: center;
+          &:hover{
+            border-color: transparent;
+          }
+        }
+         
       }
       &_link{
         font-weight: bold;
@@ -124,6 +146,31 @@
         bottom: 0;
       }
     }
-  }
-  
+    .active{
+      &:before{
+        translate: rotate(45deg);
+        top: 9px;
+      }
+      &:after{
+        translate: rotate(-45deg);
+        bottom: 9px;
+      }
+      span{
+        transform: scale(0);
+      }
+    }
+  }  
 }
+
+
+// hamburger.active:before{
+//   transform: rotate(45deg);
+//   top: 9px;
+// }
+// .hamburger.active:after{
+//   transform: rotate(-45deg);
+//   bottom: 9px;
+// }
+// .hamburger.active span{
+//   transform: scale(0);
+// }

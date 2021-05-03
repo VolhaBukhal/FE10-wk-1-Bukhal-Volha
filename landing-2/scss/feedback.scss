@@ -31,28 +31,34 @@
             flex-direction: column;
             justify-content: center;
             align-items: start;
-            font-family: 'Cardo';
+            padding-left: 8%;
             @media(max-width: 951px) {
                 align-items: center;
+                padding-left: 5%;
+                width: 80%;
             }
             @media(max-width: 800px){
                 width: 100%;
-                min-height: 300px;
+                justify-content: start;
+                padding: 40px 0;
+                min-height: 250px;
             }
             
             &_quote{
                 width: 80%;
                 font-size: 36px;
-                margin-left: 8%;
-                font-family: Cardo;
                 font-weight: normal;
                 font-stretch: normal;
                 font-style: italic;
                 line-height: 1.2;
                 text-align: left;
                 color: #ffffff;
+                p{
+                    font-family: Cardo;
+                }
                 @media(max-width: 1200px) {
                     font-size: 30px;
+                    
                 }
                 @media(max-width: 951px) {
                     text-align: center;
@@ -61,7 +67,7 @@
             } 
             &_owner{
                 width: 80%;
-                margin: 30px 0 0 8%;
+                margin-top: 30px;
                 font: {
                     family: Raleway;
                     size: 13px;
@@ -71,6 +77,9 @@
                 text-align: left;
                 color: #ffffff;
                 text-transform: uppercase;
+                @media(max-width: 951px){
+                    text-align: center;
+                 }
                 @media(max-width: 800px){
                    margin-top: 10px;
                    text-align: center;

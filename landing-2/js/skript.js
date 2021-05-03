@@ -38,6 +38,13 @@
     //   });
 
 $(document).ready(function(){
+  //burger initializing
+  $('.burger').click(function(event){
+    $('.burger, .header-nav__menu').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+
+ //slick slider initializing
   $('.feeedback-slider').slick({
     dots: true,
     arrows: false,
