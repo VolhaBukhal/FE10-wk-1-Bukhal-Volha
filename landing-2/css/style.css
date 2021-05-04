@@ -45,15 +45,28 @@ body {
 
 .header {
   padding: 45px 0 0 0;
-  background-image: url(../img/bg.png);
-  background-position: 0 0;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 5;
+}
+.header.fixed {
+  background-color: #313454;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+}
+@media (max-width: 768px) {
+  .header.fixed {
+    padding: 10px 0;
+  }
+}
+.header.fixed .header-nav {
+  padding-bottom: 0;
+  border-color: transparent;
 }
 @media (max-width: 960px) {
   .header {
@@ -129,7 +142,7 @@ body {
   }
 }
 .header-nav__menu_item {
-  margin-left: 59px;
+  margin-left: 57px;
   border-bottom: 2px solid transparent;
   transition: 0.5s all ease;
 }
@@ -489,6 +502,10 @@ body {
   }
 }
 
+.slick-track {
+  width: 100 vh;
+}
+
 .slick-dots {
   list-style: none;
   display: flex;
@@ -526,6 +543,11 @@ body {
 
 .slick-active button {
   background-color: #ffffff;
+}
+
+.slick-track {
+  display: flex;
+  padding: 0;
 }
 
 .team {
@@ -651,7 +673,7 @@ body {
   transition: 0.5s all ease;
 }
 .social li:hover {
-  background-color: #292D4C;
+  background-color: #313454;
   opacity: 0.95;
 }
 .social li:hover a {
@@ -670,21 +692,25 @@ body {
 @media (max-width: 800px) {
   .feedback-item__img {
     width: 100%;
-    height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .feedback-item__img {
+    border-radius: 100%;
   }
 }
 .feedback-item__img img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top right;
 }
-@media (max-width: 800px) {
+@media (max-width: 1050px) {
   .feedback-item__img img {
-    width: 100%;
-    object-position: center;
+    object-position: top center;
   }
 }
 .feedback-item__text {
@@ -700,7 +726,6 @@ body {
   .feedback-item__text {
     align-items: center;
     padding-left: 5%;
-    width: 80%;
   }
 }
 @media (max-width: 800px) {
@@ -802,46 +827,46 @@ body {
   border: 1px solid #e84545;
 }
 
-.footer-top {
-  padding: 71px 0 88px 0;
+.contacts {
+  padding: 71px 0 107px 0;
   background-color: #3a3e64;
 }
 @media (max-width: 767px) {
-  .footer-top {
+  .contacts {
     padding: 0 0 40px 0;
   }
 }
-.footer__row {
+.contacts__row {
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 767px) {
-  .footer__row {
+  .contacts__row {
     flex-direction: column;
     align-items: center;
   }
 }
-.footer-item {
+.contacts-item {
   width: 328px;
 }
 @media (max-width: 767px) {
-  .footer-item {
+  .contacts-item {
     margin-top: 30px;
   }
-  .footer-item:first-child {
+  .contacts-item:first-child {
     order: 2;
   }
-  .footer-item:nth-child(2) {
+  .contacts-item:nth-child(2) {
     margin-top: 10px;
   }
-  .footer-item:nth-child(2) .footer-item__title {
+  .contacts-item:nth-child(2) .footer-item__title {
     display: none;
   }
-  .footer-item:last-child {
+  .contacts-item:last-child {
     display: none;
   }
 }
-.footer-item__title {
+.contacts-item__title {
   font-family: Raleway;
   font-size: 14px;
   font-weight: bold;
@@ -849,7 +874,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-.footer-item__descr {
+.contacts-item__descr {
   margin-top: 22px;
   font-family: Raleway;
   font-size: 14px;
@@ -858,31 +883,32 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 @media (max-width: 767px) {
-  .footer-item__descr {
+  .contacts-item__descr {
     margin-top: 10px;
   }
 }
-.footer-item__social {
+.contacts-item__social {
   margin-top: 22px;
   display: flex;
   justify-content: center;
 }
-.footer-item__social_link {
+.contacts-item__social_link {
   border: 2px solid #ffffff;
   margin-right: 7px;
 }
-.footer-item__social_link:last-child {
+.contacts-item__social_link:last-child {
   margin-right: 0;
 }
-.footer-item__social_link a {
+.contacts-item__social_link a {
   font-size: 16px;
   color: #ffffff;
 }
-.footer-bottom {
+
+.footer {
   padding: 29px 0;
   background-color: #313454;
 }
-.footer-bottom__text {
+.footer__text {
   width: 319px;
   margin: 0 auto;
   font-family: Raleway;
@@ -891,13 +917,13 @@ body {
   text-align: center;
   color: #808080;
 }
-.footer-bottom__link {
+.footer__link {
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: 0.5s all ease;
 }
-.footer-bottom__link:hover {
+.footer__link:hover {
   border-bottom: 1px solid #ffffff;
 }
 .footer .fa-heart {
