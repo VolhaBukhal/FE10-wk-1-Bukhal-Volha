@@ -529,67 +529,58 @@ body {
 }
 
 .team {
-  padding: 101px 0;
+  padding: 101px 0 0 0;
 }
 @media (max-width: 1200px) {
   .team {
-    padding: 71px 0;
+    padding: 71px 0 0 0;
   }
 }
 @media (max-width: 1200px) and (max-width: 860px) {
   .team {
-    padding: 30px 0;
+    padding: 30px 0 0 0;
   }
 }
 .team__row {
   display: flex;
-  justify-content: space-between;
-  margin: 0 -15px;
+  flex-wrap: wrap;
+  padding: 0 -15px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
   .team__row {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 }
 .team-item {
   width: 25%;
-  margin: 0 15px;
+  padding: 0 15px;
+  margin-bottom: 70px;
 }
-@media (max-width: 1200px) {
-  .team-item {
-    margin: 30px 65px 0 65px;
-  }
-}
-@media (max-width: 860px) {
+@media (max-width: 1000px) {
   .team-item {
     width: 50%;
-    margin: 30px 15px 0 15px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .team-item {
     width: 80%;
-    margin: 30px 20px 0 20px;
   }
 }
 .team-item__img {
-  width: 100%;
-  height: 270px;
+  display: block;
+  max-width: 100%;
+  height: auto;
   position: relative;
 }
-@media (max-width: 550px) {
+@media (max-width: 1000px) {
   .team-item__img {
-    height: 270px;
+    margin: 0 auto;
   }
 }
-.team-item__img img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: none;
+@media (max-width: 600px) {
+  .team-item__img {
+    border-radius: 50%;
+  }
 }
 .team-item__name {
   margin-top: 30px;
