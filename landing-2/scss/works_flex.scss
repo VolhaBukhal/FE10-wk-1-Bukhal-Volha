@@ -6,7 +6,7 @@
     &-item{
         width: 25%;
         height: 350px;
-        flex-grow:1;
+        // flex-grow:1;
         position: relative;
         border: 1px solid #ffffff;
         transition: 2s all ease;
@@ -53,9 +53,7 @@
             z-index: 3;
         }
         &__link_descr {
-            font-family: Raleway;
             font-size: 14px;
-            font-weight: bold;
             text-align: center;
             color: #ffffff;
             background-color:rgba(232, 69, 69,.9);
@@ -71,9 +69,15 @@
             z-index: 4;
             transition: 0.5s all ease;
         }
+        &__name{
+            font-family: Raleway;
+            font-weight: 700;
+
+        }
         &__type{
             margin-top: 20px;
-            font-weight: normal;
+            font-family: Raleway;
+            font-weight: 400;
         }
     }
 }  

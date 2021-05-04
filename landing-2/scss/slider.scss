@@ -34,6 +34,10 @@
         font-size: 0;
         background-color: $grey_color;
         border: solid 1px $grey_color;
+        cursor: pointer;
+        &:hover{
+            background-color: #494545;
+        }
 
     }    
 }

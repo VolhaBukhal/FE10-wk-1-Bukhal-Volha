@@ -1,10 +1,12 @@
 .firstscreen {
   padding: 256px 0 156px 0;
   background: url("../img/bg.png");
-  background-position: center;
+  background-position: top center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  min-height: 100vh;
   position: relative;
+  display: flex;
   z-index: 1;
   @media(max-width: 1120px) {
     padding: 245px 0 156px 0;
@@ -17,7 +19,7 @@
   }
   &-title {
     font-size: 65px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.09;
     text-align: center;
     color: $white_color;
@@ -44,7 +46,7 @@
     margin-top: 41px;
     font-family: Raleway;
     font-size: 22px;
-    font-weight: normal;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: normal;
     text-align: center;
@@ -54,9 +56,6 @@
     }
     @media(max-width: 576px) {
       font-size: 16px;
-    }
-    @media(max-width: 420px){
-      display: none;
     }
   }
   &-link {
@@ -68,17 +67,15 @@
     @media(max-width: 420px){
       width: 80%;
     }
-
-  
+  }
+  // container-firstscreen need to make fully adaptive first screen
+  .container-firstscreen{
+    width: 100%;
+    flex: 1 1 auto;
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
-// .container {
-// }
-// .firstscreen-title {
-// }
-// .firstscreen-subtitle {
-// }
-// .btn-view__link {
-// }
-// .firstscreen-link {
-// }
+
