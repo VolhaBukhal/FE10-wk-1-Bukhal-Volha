@@ -49,7 +49,6 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 5;
 }
 .header.fixed {
   background-color: #313454;
@@ -58,6 +57,7 @@ body {
   top: 0;
   left: 0;
   padding: 20px 0;
+  z-index: 10;
 }
 @media (max-width: 768px) {
   .header.fixed {
@@ -104,6 +104,7 @@ body {
   color: #6c7279;
   text-transform: uppercase;
   text-decoration: none;
+  z-index: 2;
 }
 .header-nav__logo::after {
   content: "box";
@@ -122,6 +123,9 @@ body {
   font-family: Raleway;
   font-size: 13px;
 }
+.header-nav__menu.active {
+  left: 0;
+}
 @media (max-width: 950px) {
   .header-nav__menu {
     justify-content: space-between;
@@ -130,15 +134,17 @@ body {
 @media (max-width: 768px) {
   .header-nav__menu {
     position: fixed;
-    top: 57px;
+    top: 0;
     left: -100%;
-    width: 80%;
+    width: 100%;
     height: 100%;
-    background-color: #3a3e64;
+    padding-top: 110px;
+    background-color: #313454;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
     transition: 1s all ease;
+    z-index: -1;
   }
 }
 .header-nav__menu_item {
@@ -193,6 +199,18 @@ body {
     position: relative;
     width: 30px;
     height: 20px;
+    cursor: pointer;
+  }
+  .header .burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header .burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header .burger.active span {
+    transform: scale(0);
   }
   .header .burger span {
     position: absolute;
@@ -221,22 +239,6 @@ body {
     position: absolute;
     bottom: 0;
   }
-}
-
-.burger.active:before {
-  transform: rotate(45deg);
-  top: 9px;
-}
-.burger.active:after {
-  transform: rotate(-45deg);
-  bottom: 9px;
-}
-.burger.active span {
-  transform: scale(0);
-}
-
-.header-nav__menu.active {
-  left: 0;
 }
 
 @media (max-width: 768px) {
@@ -543,11 +545,6 @@ body {
 
 .slick-active button {
   background-color: #ffffff;
-}
-
-.slick-track {
-  display: flex;
-  padding: 0;
 }
 
 .team {
