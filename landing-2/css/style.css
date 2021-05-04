@@ -404,7 +404,7 @@ body {
 }
 .works-item {
   width: 25%;
-  height: 350px;
+  max-height: 350px;
   position: relative;
   border: 1px solid #ffffff;
   transition: 2s all ease;
@@ -415,7 +415,6 @@ body {
 @media (max-width: 1300px) {
   .works-item {
     width: 33.333%;
-    height: 320px;
   }
   .works-item:nth-child(8), .works-item:nth-child(7) {
     display: none;
@@ -437,23 +436,17 @@ body {
     display: none;
   }
 }
-.works-item__img {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .works-item__link {
   display: block;
+  padding: 0 0 60% 0;
+}
+.works-item__img {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 3;
+  object-fit: cover;
 }
 .works-item__link_descr {
   font-size: 14px;
