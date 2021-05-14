@@ -1,50 +1,43 @@
 .team {
-    padding: 101px 0;
+    padding: 101px 0 0 0;
     @media (max-width: 1200px ){
-        padding: 71px 0;
+        padding: 71px 0 0 0;
     @media (max-width: 860px ){
-        padding: 30px 0;
+        padding: 30px 0 0 0;
     }
     }
     &__row{
         display: flex;
-        justify-content: space-between;
-        margin: 0 -15px;
-        @media (max-width: 1200px ){
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 0 -15px;
+        
+        @media (max-width: 600px ){
+            justify-content: center;
         }
     }
     &-item{
         width: 25%;
-        margin: 0 15px;
-        @media (max-width: 1200px ){
-            margin: 30px 65px 0 65px;
-        }
-        @media (max-width: 860px ){
+        padding: 0 15px;
+        margin-bottom: 70px;
+        @media (max-width: 1000px ){
             width: 50%;
-            margin: 30px 15px 0 15px;
-        }
-        @media (max-width: 550px ){
-            width: 80%;
-            margin: 30px 20px 0 20px;
         }
 
+        @media (max-width: 600px ){
+            width: 80%;
+        }
         &__img{
-            width: 100%;
-            height: 270px;
+            display: block;
+            max-width: 100%;
+            height: auto;
             position: relative;
-            @media (max-width: 550px ){
-                height: 270px;
+            @media (max-width: 1000px ){
+                margin: 0 auto;
             }
-            img{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: none;
+            @media (max-width: 600px ){
+                border-radius: 50%;
             }
+
         }
         &__name{
             margin-top: 30px;
@@ -106,7 +99,7 @@
         align-items: center;
         transition: 0.5s all ease;
         &:hover{
-            background-color: #292D4C;
+            background-color: #313454;
             opacity: 0.95;
             a {
                 color: $red_color;

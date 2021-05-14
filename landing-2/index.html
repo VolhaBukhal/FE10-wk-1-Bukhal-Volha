@@ -16,7 +16,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header" id="header">
       <div class="container ">
         <nav class="header-nav">
           <a class="header-nav__logo" href="#">Active</a>
@@ -44,7 +44,7 @@
      </div>
     </header>
   
-    <section class="firstscreen">
+    <section class="firstscreen" id="firstscreen">
       <div class="container container-firstscreen">
         <h1 class="firstscreen-title">Your Favorite One  Page Multi Purpose Template</h1>
         <div class="firstscreen-subtitle">
@@ -195,9 +195,7 @@
       <div class="container">
         <div class="team__row">
           <div class="team-item">
-            <div class="team-item__img">
-              <img src="./img/team/team1.png" alt="name">
-            </div>
+            <img src="./img/team/team1.png" alt="name" class="team-item__img">
             <div class="team-item__name">Ruth Woods</div>
             <div class="team-item__position">Founder, CEO</div>
             <div class="team-item__descr">
@@ -216,9 +214,7 @@
             </ul> 
           </div>
           <div class="team-item">
-            <div class="team-item__img">
-              <img src="./img/team/team2.png" alt="name">
-            </div>
+            <img src="./img/team/team2.png" alt="name" class="team-item__img">
             <div class="team-item__name">Timothy Reed</div>
             <div class="team-item__position">Co-Founder, Developer</div>
             <div class="team-item__descr">
@@ -237,9 +233,7 @@
             </ul> 
           </div>
           <div class="team-item">
-            <div class="team-item__img">
-              <img src="./img/team/team3.png" alt="name">
-            </div>
+            <img src="./img/team/team3.png" alt="name" class="team-item__img">
             <div class="team-item__name">Victoria Valdez</div>
             <div class="team-item__position">UI Designer</div>
             <div class="team-item__descr">
@@ -258,9 +252,7 @@
             </ul> 
           </div>
           <div class="team-item">
-            <div class="team-item__img">
-              <img src="./img/team/team4.png" alt="ruth">
-            </div>
+            <img src="./img/team/team4.png" alt="ruth" class="team-item__img">
             <div class="team-item__name">Beverly Little</div>
             <div class="team-item__position">Data Scientist</div>
             <div class="team-item__descr">
@@ -286,7 +278,7 @@
       <div class="feeedback-slider">
         <div class="feedback-item">
           <div class="feedback-item__img">
-            <img src="./img/feedback/slide1.png" alt="slide1">
+            <img src="./img/feedback/slide1.jpg" alt="slide1">
           </div>
           <div class="feedback-item__text">
             <div class="feedback-item__text_quote">
@@ -359,48 +351,47 @@
         <a href="#" class="btn-view__link download__link">Download Here</a>
       </div>
     </section>
-  
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="footer__row">
-            <div class="footer-item">
-              <h3 class="footer-item__title">Location</h3>
-              <div class="footer-item__descr">
-                <p>3481 Melrose Place
-                  Beverly Hills, CA 90210</p>
-              </div>
+
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__row">
+          <div class="contacts-item">
+            <h3 class="contacts-item__title">Location</h3>
+            <div class="contacts-item__descr">
+              <p>3481 Melrose Place
+                Beverly Hills, CA 90210</p>
             </div>
-            <div class="footer-item">
-              <h3 class="footer-item__title">Share with Love</h3>
-              <ul class="footer-item__social social">
-                <li class="footer-item__social_link">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li class="footer-item__social_link">
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>  
-                <li class="footer-item__social_link">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </li>
-              </ul> 
-            </div>
-            <div class="footer-item">
-              <h3 class="footer-item__title">About ActiveBox</h3>
-              <div class="footer-item__descr">
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
-              </div>
+          </div>
+          <div class="contacts-item">
+            <h3 class="contacts-item__title">Share with Love</h3>
+            <ul class="contacts-item__social social">
+              <li class="contacts-item__social_link">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="contacts-item__social_link">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>  
+              <li class="contacts-item__social_link">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul> 
+          </div>
+          <div class="contacts-item">
+            <h3 class="contacts-item__title">About ActiveBox</h3>
+            <div class="contacts-item__descr">
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="footer-bottom__text">
-            Copyright © 2015 ActiveBox. All Rights Reserved Made wit
-            <i class="fas fa-heart"></i>
-            <a class="footer-bottom__link" href="#">by Kamal Chaneman</a>
-          </div>
+    </section>
+  
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__text">
+          Copyright © 2015 ActiveBox. All Rights Reserved Made wit
+          <i class="fas fa-heart"></i>
+          <a class="footer__link" href="#">by Kamal Chaneman</a>
         </div>
       </div>
     </footer>

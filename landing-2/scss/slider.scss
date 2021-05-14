@@ -10,6 +10,10 @@
         display: block;
     }
 }
+.slick-track {
+    width: 100 vh;
+
+}    
 .slick-dots {
     list-style: none;
     display: flex;
@@ -46,3 +50,4 @@
         background-color: #ffffff;
     }    
 }
+

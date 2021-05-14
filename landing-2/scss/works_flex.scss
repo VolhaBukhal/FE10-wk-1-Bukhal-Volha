@@ -5,7 +5,7 @@
     min-width: 0; //this properti set to slider work
     &-item{
         width: 25%;
-        height: 350px;
+        max-height: 350px;
         // flex-grow:1;
         position: relative;
         border: 1px solid #ffffff;
@@ -15,7 +15,6 @@
         }
         @media(max-width: 1300px){
             width: 33.333%;
-            height: 320px;
             &:nth-child(8), &:nth-child(7) {
                 display: none;
             }
@@ -34,23 +33,19 @@
                 display: none;
             }
         }
-        &__img{
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
         &__link{
             display: block;
+            padding: 0 0 60% 0;
+
+        }
+        &__img{
+            // display: block;
             position: absolute;
             width: 100%;
             height: 100%;
             top: 0;
             left: 0;
-            z-index: 3;
+            object-fit: cover;
         }
         &__link_descr {
             font-size: 14px;
