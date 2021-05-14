@@ -30,6 +30,10 @@
         bottom: 3%;
         right: 50%;
     }
+    @media(max-width: 400px){
+        bottom: 2%;
+        right: 50%;
+    }
     button{
         margin-right: 8px;
         width: 12px;
